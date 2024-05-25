@@ -7,5 +7,4 @@ docker run --rm -it -v $PWD:/home/alpine/ovpn-create -w /home/alpine/ovpn-create
 
 echo "Ready to deploy openvpn container inside deploy"
 
-cp -a conf/server ..
 cp deploy/docker-compose.yml ..
