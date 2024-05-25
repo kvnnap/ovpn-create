@@ -1,0 +1,15 @@
+services:
+  openvpn:
+    container_name: openvpn
+    image: kvnnap/openvpn:latest
+    build:
+      context: ovpn-create/deploy
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./ovpn-create/conf/server:/root/server:ro
+    ports:
+      - 1194:1194/tcp

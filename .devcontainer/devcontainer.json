@@ -1,0 +1,10 @@
+{
+    "name": "ovpn-create Dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/home/alpine/.ssh,readonly",
+		"type=bind,source=/etc/localtime,target=/etc/localtime,readonly"
+	]
+}
