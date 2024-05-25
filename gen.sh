@@ -20,5 +20,5 @@ done
 
 # Move server dir
 mkdir -p conf/server
-cp server.conf pki/ca.crt pki/dh.pem pki/issued/server.crt pki/private/server.key conf/server
+cp server.conf up.sh down.sh pki/ca.crt pki/dh.pem pki/issued/server.crt pki/private/server.key conf/server
 mv conf/server/server.conf conf/server/server.ovpn
