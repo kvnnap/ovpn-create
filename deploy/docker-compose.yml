@@ -10,6 +10,6 @@ services:
     devices:
       - /dev/net/tun
     volumes:
-      - ./ovpn-create/conf/server:/root/server
+      - ./server:/root/server
     ports:
       - 1194:1194/tcp
